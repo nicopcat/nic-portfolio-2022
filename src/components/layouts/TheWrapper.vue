@@ -1,0 +1,30 @@
+<template>
+  <section>
+    <transition>
+      <home-page></home-page>
+    </transition>
+    <my-works></my-works>
+    <contact-me></contact-me>
+  </section>
+</template>
+<script>
+import ContactMe from "../pages/ContactMe.vue";
+import HomePage from "../pages/HomePage.vue";
+import MyWorks from "../pages/MyWorks.vue";
+
+export default {
+  components: {
+    HomePage,
+    MyWorks,
+    ContactMe,
+  },
+};
+</script>
+
+<style scoped>
+section {
+  width: 70vw;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+</style>
