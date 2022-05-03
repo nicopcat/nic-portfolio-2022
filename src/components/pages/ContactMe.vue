@@ -72,18 +72,21 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  width: 450px;
+  /* width: 430px; */
+  width: 70%;
+
   margin-left: 10%;
   margin-top: 1rem;
   /* background-color: royalblue; */
 }
 
 .contact-main .my-contact {
-  width: 65%;
+  width: 55%;
 }
 
 .contact-main .my-contact input,
 textarea {
+  width: 90%;
   font-family: monospace;
   margin: 5px 0;
   padding: 5px;
@@ -93,14 +96,14 @@ textarea {
 }
 
 .contact-main .my-pic {
-  display: flex;
-  place-content: center;
-  width: 30%;
+  padding: 5px;
+
+  width: 35%;
   height: 120px;
-  background-color: rgb(243, 175, 27);
 }
 .contact-main .my-pic img {
-  transform: scale(0.8);
+  height: 120%;
+  border-radius: 6px;
 }
 
 .btn {
@@ -113,5 +116,11 @@ textarea {
   color: white;
   background-color: royalblue;
   cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-main {
+    width: 100%;
+  }
 }
 </style>

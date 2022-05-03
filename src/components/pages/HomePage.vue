@@ -10,7 +10,7 @@
         </div>
         <div class="info">
           <h3>Hi, I'm Nicole</h3>
-          <p>C:\WINDOWS\System32>User>Nicole</p>
+          <p>C:\WINDOWS\User\Nicole</p>
 
           <p>I'm a web developer and I like pretty designs.</p>
           <p>
@@ -55,6 +55,8 @@ export default {};
 .info-box {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
+
   margin-left: 10%;
 }
 
@@ -64,12 +66,10 @@ export default {};
   box-shadow: 3px 3px 0 rgb(125, 148, 219);
 }
 .info-box .info {
-  max-width: 320px;
+  max-width: 350px;
   max-height: 260px;
   width: 70%;
-  margin: 3rem 2rem 0 6rem;
-
-  /* background-color: #fff; */
+  margin: 3rem;
   background-color: black;
 }
 
@@ -77,7 +77,7 @@ export default {};
   margin: 0;
   padding: 0.5rem;
   font-family: monospace;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #fdce1f;
   box-shadow: 3px 3px 0 royalblue;
   border-top: 2px solid white;

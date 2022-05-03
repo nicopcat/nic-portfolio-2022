@@ -8,20 +8,18 @@
     <div class="menu">
       <ul class="list-menu">
         <li>
-          <base-button><a href="#contact">CONTACT</a></base-button>
+          <a href="#contact"><base-button>CONTACT</base-button></a>
         </li>
         <li>
-          <base-button
-            ><a href="https://www.niqks.tk/" target="_blank"
-              >BLOG</a
-            ></base-button
+          <a href="https://www.niqks.tk/" target="_blank"
+            ><base-button>BLOG</base-button></a
           >
         </li>
         <li>
-          <base-button><a href="#work">WORKS</a></base-button>
+          <a href="#work"><base-button>WORKS</base-button></a>
         </li>
         <li>
-          <base-button><a href="/">ABOUT</a></base-button>
+          <a href="javacript:;"><base-button>ABOUT</base-button></a>
         </li>
       </ul>
       <ol>
@@ -84,9 +82,6 @@ li {
 .logo img {
   border-radius: 4px;
 }
-.menu {
-  float: right;
-}
 
 .sandwich {
   display: none;
@@ -132,12 +127,15 @@ li {
     display: none;
   }
   .sandwich {
-    margin: 0;
+    margin: 0 15px;
     width: 20px;
     display: block;
   }
   .menu .stack-menu li {
     display: block;
+  }
+  .navbar {
+    width: 120%;
   }
 }
 </style>

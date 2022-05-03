@@ -23,9 +23,16 @@ export default {
 
 <style scoped>
 section {
-  max-width: 720px;
+  /* max-width: 720px; */
   width: 70%;
   margin: 0 auto;
   scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    width: 100vw;
+    margin: 0 auto;
+  }
 }
 </style>

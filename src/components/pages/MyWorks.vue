@@ -91,7 +91,7 @@ BaseButton
 
 .works .coach,
 .works .dodo {
-  margin-top: 1rem;
+  margin-top: 1.8rem;
   width: 370px;
 }
 
