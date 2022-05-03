@@ -8,7 +8,7 @@
     <div class="menu">
       <ul class="list-menu">
         <li>
-          <base-button><a href="">CONTACT</a></base-button>
+          <base-button><a href="#contact">CONTACT</a></base-button>
         </li>
         <li>
           <base-button
@@ -28,7 +28,7 @@
         <base-button class="sandwich" @click="openMenu">≡</base-button>
         <ul class="stack-menu" v-if="tabOpen">
           <li>
-            <a href="">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </li>
           <li>
             <a href="https://www.niqks.tk/" target="_blank">BLOG</a>
