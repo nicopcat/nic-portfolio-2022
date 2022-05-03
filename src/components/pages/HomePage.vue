@@ -13,7 +13,6 @@
           <p>C:\WINDOWS\System32>User>Nicole</p>
 
           <p>I'm a web developer and I like pretty designs.</p>
-
           <p>
             Occationally do some photography, enjoy music and reading books<span
               class="blink"
@@ -27,11 +26,7 @@
 </template>
 
 <script>
-import BaseButton from "../ui/BaseButton.vue";
-export default {
-  components: { BaseButton },
-  setup() {},
-};
+export default {};
 </script>
 
 <style scoped>
@@ -39,14 +34,16 @@ export default {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+  margin-bottom: 2rem;
   /* background-color: rgb(60, 99, 167); */
 }
 
 .about-title {
   border-bottom: 5px dashed black;
   margin-left: 10%;
-  width: 100%;
-  height: 75px;
+  width: 45vw;
+
+  height: 50px;
   margin-top: 2rem;
   text-align: center;
 }
@@ -58,11 +55,7 @@ export default {
 .info-box {
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
   margin-left: 10%;
-  width: 550px;
-  height: 320px;
-  /* background-color: rgba(153, 205, 50, 0.685); */
 }
 
 .info-box .pic img {
@@ -71,10 +64,9 @@ export default {
   box-shadow: 3px 3px 0 rgb(125, 148, 219);
 }
 .info-box .info {
-  max-width: 300px;
-  max-height: 220px;
+  max-width: 320px;
+  max-height: 260px;
   width: 70%;
-  height: 70%;
   margin: 3rem 2rem 0 6rem;
 
   /* background-color: #fff; */
@@ -93,7 +85,7 @@ export default {
 }
 
 .info-box .info p {
-  padding: 0.3rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   font-family: monospace;
   font-size: 16px;
   color: rgb(35, 220, 35);

@@ -2,7 +2,7 @@
   <base-wrapper>
     <section class="container">
       <div class="works-title">
-        <base-button class="btn" id="work">Works</base-button>
+        <base-button class="btn" id="work">WORKS</base-button>
       </div>
       <div class="works">
         <div class="dodo">
@@ -41,27 +41,22 @@
 </template>
 
 <script>
-import BaseButton from "../ui/BaseButton.vue";
-
-export default {
-  components: {
-    BaseButton,
-  },
-};
+export default {};
 </script>
 
-    BaseButton
+BaseButton
 <style scoped>
 .container {
   display: flex;
   flex-flow: row wrap;
-  align-content: space-between;
+  align-content: flex-start;
+  margin-bottom: 2rem;
 }
 .container .works-title {
   border-bottom: 5px dashed black;
   margin-left: 10%;
-  width: 100%;
-  height: 75px;
+  width: 45vw;
+  height: 50px;
   margin-top: 2rem;
   text-align: center;
 }
@@ -72,11 +67,10 @@ export default {
 
 .container .works {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  width: 90%;
-  height: 200px;
-  margin: 1.5rem;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  margin-left: 10%;
+  margin-top: 1rem;
 }
 
 .works h4 {
@@ -97,10 +91,8 @@ export default {
 
 .works .coach,
 .works .dodo {
-  margin: 1.1rem;
+  margin-top: 1rem;
   width: 370px;
-  /* height: 290px; */
-  /* background-color: rgb(43, 120, 255); */
 }
 
 .dodo-details-show,
@@ -111,7 +103,7 @@ export default {
 
 .para {
   background-color: #fff;
-  padding: 0.2rem;
+  padding: 0.5rem;
   border: 4px solid rgb(243, 175, 27);
   margin-top: 5px;
 }
@@ -119,7 +111,7 @@ export default {
   text-decoration: underline;
 }
 .para p {
+  padding: 0.3rem 0;
   font-size: 14px;
 }
 </style>
-

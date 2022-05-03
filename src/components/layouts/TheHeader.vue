@@ -96,7 +96,8 @@ li {
 }
 
 .sandwich:hover {
-  background-color: #fdcd1f2e;
+  background-color: #fdcd1f7e;
+  color: white;
   cursor: pointer;
   margin: 0;
 }

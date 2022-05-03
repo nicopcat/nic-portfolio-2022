@@ -23,7 +23,8 @@ export default {
 
 <style scoped>
 section {
-  width: 70vw;
+  max-width: 720px;
+  width: 70%;
   margin: 0 auto;
   scroll-behavior: smooth;
 }

@@ -14,6 +14,7 @@ div {
 }
 
 div:hover {
-  background-color: #fdce1f;
+  background-color: #fee37b;
+  /* color: white; */
 }
 </style>
