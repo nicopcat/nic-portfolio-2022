@@ -53,6 +53,7 @@ export default {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
+  padding-bottom: 1rem;
 }
 
 .container .contact-title {
@@ -97,12 +98,11 @@ textarea {
 
 .contact-main .my-pic {
   padding: 5px;
-
   width: 35%;
   height: 120px;
 }
 .contact-main .my-pic img {
-  height: 120%;
+  height: 100%;
   border-radius: 6px;
 }
 
@@ -120,7 +120,7 @@ textarea {
 
 @media screen and (max-width: 450px) {
   .contact-main {
-    width: 100%;
+    width: 120%;
   }
 }
 </style>

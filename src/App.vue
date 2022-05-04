@@ -17,7 +17,7 @@ export default {
 
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #111111;

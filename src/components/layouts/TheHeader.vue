@@ -22,7 +22,7 @@
           <a href="javacript:;"><base-button>ABOUT</base-button></a>
         </li>
       </ul>
-      <ol>
+      <div class="stack">
         <base-button class="sandwich" @click="openMenu">≡</base-button>
         <ul class="stack-menu" v-if="tabOpen">
           <li>
@@ -38,7 +38,7 @@
             <a href="/">ABOUT</a>
           </li>
         </ul>
-      </ol>
+      </div>
     </div>
   </nav>
 </template>
@@ -73,10 +73,10 @@ li {
   justify-content: space-between;
 }
 .logo {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   float: left;
-  margin: 12px 25px;
+  margin: 14px 25px;
 }
 
 .logo img {
@@ -85,21 +85,20 @@ li {
 
 .sandwich {
   display: none;
+  width: 30px;
   padding: 5px 5px;
   text-align: center;
   color: #fdce1f;
 }
 
 .sandwich:hover {
-  background-color: #fdcd1f7e;
   color: white;
   cursor: pointer;
-  margin: 0;
 }
 
-.menu ul li {
+.menu .list-menu li {
   float: right;
-  padding: 0.8em 1em;
+  padding: 1rem;
 }
 
 .menu a {
@@ -107,19 +106,24 @@ li {
   font-weight: 600;
   text-decoration: none;
 }
-.menu .stack-menu {
+.menu .stack {
+  margin: 1rem;
+}
+
+.menu .stack-menu ul {
+  margin-right: 1rem;
   width: 40px;
   height: auto;
 }
+
 .menu .stack-menu li {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-.menu .stack-menu li:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
+  padding: 0.1rem 0.2rem;
   border-radius: 4px;
-  padding: 2px;
+}
+
+.menu .stack-menu li:active {
+  border-bottom: 1px solid darkred;
 }
 
 @media screen and (max-width: 450px) {
@@ -127,15 +131,10 @@ li {
     display: none;
   }
   .sandwich {
-    margin: 0 15px;
+    float: right;
+    margin: 4px 0;
     width: 20px;
     display: block;
-  }
-  .menu .stack-menu li {
-    display: block;
-  }
-  .navbar {
-    width: 120%;
   }
 }
 </style>

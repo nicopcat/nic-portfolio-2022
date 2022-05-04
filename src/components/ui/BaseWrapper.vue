@@ -6,11 +6,9 @@
 
 <style scoped>
 .warpper {
-  margin: 4rem auto;
-  display: flex;
-  flex-flow: row wrap;
-
-  /* height: 70%; */
-  /* background-color: rgb(255, 158, 60); */
+  margin: 4rem 2rem;
+  /* display: flex;
+  flex-flow: row wrap; */
+  background-color: rgb(255, 158, 60);
 }
 </style>

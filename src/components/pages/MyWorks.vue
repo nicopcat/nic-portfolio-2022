@@ -6,7 +6,7 @@
       </div>
       <div class="works">
         <div class="dodo">
-          <h4>Dodo</h4>
+          <h3>Dodo</h3>
           <div class="dodo-details">
             <div class="dodo-details-show">
               <a href="https://www.niqks.tk/dodo-v2/"
@@ -14,13 +14,13 @@
               /></a>
             </div>
             <div class="para">
-              <h5>Stacks</h5>
+              <h4>Stacks</h4>
               <p>HTML, CSS, JavaScript, Vue(vuex)</p>
             </div>
           </div>
         </div>
         <div class="coach">
-          <h4>Find a Coach</h4>
+          <h3>Find a Coach</h3>
           <div class="coach-details">
             <div class="coach-details-show">
               <a
@@ -30,7 +30,7 @@
               /></a>
             </div>
             <div class="para">
-              <h5>Stacks</h5>
+              <h4>Stacks</h4>
               <p>HTML, CSS, JavaScript, Vue(Vuex, Vue Router)</p>
             </div>
           </div>
@@ -67,32 +67,33 @@ BaseButton
 
 .container .works {
   display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  margin-left: 10%;
+  flex-flow: row wrap;
+  align-content: space-between;
+  margin-left: 8%;
   margin-top: 1rem;
 }
 
-.works h4 {
+.container .works h3 {
   margin: 0.5rem 0;
   padding: 0.3rem;
   color: aliceblue;
   max-width: 120px;
   background-color: rgb(0, 0, 0);
-  box-shadow: 3px 3px 0 rgb(243, 175, 27);
+  box-shadow: 3px 3px 0 rgb(253, 206, 31);
   font-weight: 400;
 }
 
-.works img {
+.container .works img {
   margin: auto;
   max-width: 99%;
-  box-shadow: 8px 8px 0 rgb(243, 175, 27);
+  box-shadow: 8px 8px 0 rgb(253, 206, 31);
 }
 
-.works .coach,
-.works .dodo {
+.container .works .coach,
+.container .works .dodo {
+  flex: 0 1 340px;
+  margin: 1rem;
   margin-top: 1.8rem;
-  width: 370px;
 }
 
 .dodo-details-show,
@@ -107,11 +108,21 @@ BaseButton
   border: 4px solid rgb(243, 175, 27);
   margin-top: 5px;
 }
-.para h5 {
+.para h4 {
   text-decoration: underline;
 }
 .para p {
   padding: 0.3rem 0;
   font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .container .works {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
 }
 </style>
