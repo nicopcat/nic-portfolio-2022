@@ -8,34 +8,41 @@
     <div class="menu">
       <ul class="list-menu">
         <li>
-          <a href="#contact"><base-button>CONTACT</base-button></a>
+          <a href="https://www.niqks.tk/" target="_blank">
+            <base-button
+              >BLOG
+              <svg aria-hidden="true" class="icon-arrow">
+                <use xlink:href="#social-icon-jiantou_youshang"></use>
+              </svg>
+            </base-button>
+          </a>
         </li>
         <li>
-          <a href="https://www.niqks.tk/" target="_blank"
-            ><base-button>BLOG</base-button></a
-          >
+          <a href="#contact"><base-button>CONTACT</base-button></a>
         </li>
+
         <li>
           <a href="#work"><base-button>WORKS</base-button></a>
         </li>
-        <li>
+        <!-- <li>
           <a href="javacript:;"><base-button>ABOUT</base-button></a>
-        </li>
+        </li> -->
       </ul>
       <div class="stack">
         <base-button class="sandwich" @click="openMenu">≡</base-button>
         <ul class="stack-menu" v-if="tabOpen">
+          <!-- <li>
+            <a href="/">ABOUT</a>
+          </li> -->
+          <li>
+            <a href="#work">WORKS</a>
+          </li>
+
           <li>
             <a href="#contact">CONTACT</a>
           </li>
           <li>
             <a href="https://www.niqks.tk/" target="_blank">BLOG</a>
-          </li>
-          <li>
-            <a href="#work">WORKS</a>
-          </li>
-          <li>
-            <a href="/">ABOUT</a>
           </li>
         </ul>
       </div>
@@ -98,7 +105,7 @@ li {
 
 .menu .list-menu li {
   float: right;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .menu a {
@@ -136,5 +143,13 @@ li {
     width: 20px;
     display: block;
   }
+}
+
+.icon-arrow {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
 </style>

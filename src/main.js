@@ -7,4 +7,5 @@ const app = createApp(App);
 app.component("base-button", BaseButton);
 app.component("base-wrapper", BaseWrapper);
 
+
 app.mount("#app");

@@ -5,22 +5,71 @@
         <base-button class="btn" id="contact">CONTACT</base-button>
       </div>
       <div class="contact-main">
-        <div class="my-contact">
-          <form>
-            <input type="text" placeholder="Your Name" v-model="userName" />
-            <input type="email" placeholder="Your Email" v-model="userEmail" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Hi! Leave a message here.."
-              v-model="msg"
-            ></textarea>
-            <base-button @submit.prevent="submitMsg" class="btn"
-              >Submit</base-button
+        <div class="contact">
+          <h3>Feel interested?</h3>
+          <p>Contact me sonn.</p>
+          <div class="social-link">
+            <a href="https://github.com/nicopcat" title="github.com/nicopcat">
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-github1"></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:tianfang07@outlook.com"
+              title="tianfang07@outlook.com"
             >
-          </form>
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-email"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/niqks07/"
+              title="instagram.com/niqks07/"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-instagram-fill"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/nicoletian07/"
+              title="facebook.com/nicoletian07/"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-facebook-fill"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.douban.com/people/ph1lia/"
+              title="(deprecated)"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-snssharedoubanon"></use>
+              </svg>
+            </a>
+
+            <a href="https://weibo.com/u/1751799503" title="笠原喂鴨">
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-weibo1"></use>
+              </svg>
+            </a>
+
+            <a
+              href="https://steamcommunity.com/id/nicoverdes/"
+              title="笠原喂鴨"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-steam1"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.last.fm/zh/user/fanntamy"
+              title="last.fm/zh/user/fanntamy"
+            >
+              <svg aria-hidden="true" class="icon">
+                <use xlink:href="#social-icon-lastfm1"></use>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="my-pic">
           <img src="./../.././assets/mie-01.jpg" alt="" />
@@ -31,21 +80,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      userName: "",
-      userEmail: "",
-      msg: "",
-    };
-  },
-  methods: {
-    submitMsg() {
-      console.log(`${this.userName} write to me: ${this.msg}`);
-      console.log(this.userEmail);
-    },
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -81,41 +116,28 @@ export default {
   /* background-color: royalblue; */
 }
 
-.contact-main .my-contact {
+.contact-main .contact {
   width: 55%;
 }
 
-.contact-main .my-contact input,
-textarea {
-  width: 90%;
-  font-family: monospace;
-  margin: 5px 0;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  /* box-shadow: 3px 3px 0 rgb(243, 175, 27); */
+.contact-main .contact .social-link {
+  max-width: 180px;
+  padding: 1rem 0;
+}
+
+.contact-main .contact .social-link a svg {
+  margin-right: 0.3em;
+  margin-top: 0.3em;
 }
 
 .contact-main .my-pic {
   padding: 5px;
   width: 35%;
-  height: 120px;
+  height: 125px;
 }
 .contact-main .my-pic img {
   height: 100%;
   border-radius: 6px;
-}
-
-.btn {
-  font-size: 1em;
-  width: 55px;
-  height: 16px;
-}
-
-.my-contact .btn:hover {
-  color: white;
-  background-color: royalblue;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {

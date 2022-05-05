@@ -7,6 +7,8 @@
     <contact-me></contact-me>
   </section>
 </template>
+
+
 <script>
 import ContactMe from "../pages/ContactMe.vue";
 import HomePage from "../pages/HomePage.vue";
@@ -23,15 +25,15 @@ export default {
 
 <style scoped>
 section {
-  /* max-width: 720px; */
+  max-width: 720px;
   width: 70%;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   section {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
   }
 }

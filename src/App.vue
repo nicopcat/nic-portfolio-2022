@@ -22,8 +22,7 @@ body {
   padding: 0;
   color: #111111;
   font-size: 16px;
-  background: #fdce1f url("./assets/bg-coffee.png") fixed no-repeat right
-    bottom/24%;
+  background: #fdce1f url("./assets/bg-coffee.png") fixed no-repeat 105% 100%/380px;
 }
 a {
   list-style: none;
@@ -39,5 +38,17 @@ p,
 span {
   margin: 0;
   padding: 0;
+}
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.icon svg:hover {
+  transform: scale(1.2);
+  transition: 0.4s ease;
+  background-color: #fdce1f;
 }
 </style>
