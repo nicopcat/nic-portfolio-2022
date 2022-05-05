@@ -9,8 +9,8 @@
           <h3>Dodo</h3>
           <div class="dodo-details">
             <div class="dodo-details-show">
-              <a href="https://just-dodo.netlify.app/ss"
-                ><img src="./../.././assets/dodo-1.png" target="_blank"
+              <a href="https://just-dodo.netlify.app/" target="_blank"
+                ><img src="./../.././assets/dodo-1.png"
               /></a>
             </div>
             <div class="para">
