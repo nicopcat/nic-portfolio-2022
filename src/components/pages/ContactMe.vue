@@ -6,8 +6,8 @@
       </div>
       <div class="contact-main">
         <div class="contact">
-          <h3>Feel interested?</h3>
-          <p>Contact me sonn.</p>
+          <h2>Feel interested?</h2>
+          <p>Contact me soon.</p>
           <div class="social-link">
             <a href="https://github.com/nicopcat" title="github.com/nicopcat">
               <svg aria-hidden="true" class="icon">
@@ -131,9 +131,9 @@ export default {};
 }
 
 .contact-main .my-pic {
-  padding: 5px;
+  margin-top: 0.4rem;
   width: 35%;
-  height: 125px;
+  height: 120px;
 }
 .contact-main .my-pic img {
   height: 100%;
