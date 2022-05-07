@@ -8,7 +8,7 @@
     <div class="menu">
       <ul class="list-menu">
         <li>
-          <a href="https://www.niqks.tk/" target="_blank">
+          <a href="https://blog.nekolas.cafe/" target="_blank">
             <base-button
               >BLOG
               <svg aria-hidden="true" class="icon-arrow">

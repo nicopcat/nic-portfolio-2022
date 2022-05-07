@@ -55,7 +55,7 @@
 
             <a
               href="https://steamcommunity.com/id/nicoverdes/"
-              title="笠原喂鴨"
+              title="nicoverdes"
             >
               <svg aria-hidden="true" class="icon">
                 <use xlink:href="#social-icon-steam1"></use>
@@ -128,6 +128,11 @@ export default {};
 .contact-main .contact .social-link a svg {
   margin-right: 0.3em;
   margin-top: 0.3em;
+}
+
+.contact-main .contact .social-link a svg:hover {
+  transform: scale(1.2);
+  transition: 0.35s ease;
 }
 
 .contact-main .my-pic {

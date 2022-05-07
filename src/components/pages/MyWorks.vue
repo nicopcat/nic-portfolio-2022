@@ -5,33 +5,48 @@
         <base-button class="btn" id="work">WORKS</base-button>
       </div>
       <div class="works">
-        <div class="dodo">
+        <div class="items">
           <h3>Dodo</h3>
-          <div class="dodo-details">
-            <div class="dodo-details-show">
+          <div class="details">
+            <div class="details-show">
               <a href="https://just-dodo.netlify.app/" target="_blank"
-                ><img src="./../.././assets/dodo-1.png"
+                ><img src="./../.././assets/dodo-screentshot.png"
               /></a>
             </div>
             <div class="para">
               <h4>Stacks</h4>
-              <p>HTML, CSS, JavaScript, Vue(vuex)</p>
+              <p>HTML, CSS, JavaScript, Vue-cli, Vue(vuex)</p>
+              <p>Reconstruct this app from jQuery version with Vue.js</p>
             </div>
           </div>
         </div>
-        <div class="coach">
+        <div class="items">
           <h3>Find a Coach</h3>
-          <div class="coach-details">
-            <div class="coach-details-show">
+          <div class="details">
+            <div class="details-show">
               <a
                 href="https://find-a-coach-or-become-one.netlify.app/"
                 target="_blank"
-                ><img src="./../.././assets/coach-1.png" alt=""
+                ><img src="./../.././assets/coach-screenshot.png" alt=""
               /></a>
             </div>
             <div class="para">
               <h4>Stacks</h4>
-              <p>HTML, CSS, JavaScript, Vue(Vuex, Vue Router)</p>
+              <p>HTML, CSS, JavaScript, Vue-cli, Vue(Vuex, Vue Router)</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <h3>weather</h3>
+          <div class="details">
+            <div class="details-show">
+              <a href="https://blog.nekolas.cafe/weather-app/" target="_blank"
+                ><img src="./../.././assets/weather-screenshot.png"
+              /></a>
+            </div>
+            <div class="para">
+              <h4>Stacks</h4>
+              <p>HTML, CSS, JavaScript, Vue-cli, Vue.js</p>
             </div>
           </div>
         </div>
@@ -89,21 +104,21 @@ BaseButton
   box-shadow: 8px 8px 0 rgb(253, 206, 31);
 }
 
-.container .works .coach,
-.container .works .dodo {
+.container .works .items,
+.container .works .items {
   flex: 0 1 340px;
   margin: 1rem;
   margin-top: 1.8rem;
 }
 
-.dodo-details-show,
-.coach-details-show {
+.details-show,
+.details-show {
   width: 100%;
   overflow: hidden;
 }
 
 .para {
-  background-color: #fff;
+  background-color: #fffad5;
   padding: 0.5rem;
   border: 4px solid rgb(243, 175, 27);
   margin-top: 5px;
@@ -113,6 +128,7 @@ BaseButton
 }
 .para p {
   padding: 0.3rem 0;
+  color: rgb(58, 53, 53);
   font-size: 14px;
 }
 
