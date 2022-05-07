@@ -42,7 +42,7 @@
             <a href="#contact">CONTACT</a>
           </li>
           <li>
-            <a href="https://www.niqks.tk/" target="_blank">BLOG</a>
+            <a href="https://blog.nekolas.cafe/" target="_blank">BLOG</a>
           </li>
         </ul>
       </div>
