@@ -40,7 +40,7 @@
           <h3>weather</h3>
           <div class="details">
             <div class="details-show">
-              <a href="https://blog.nekolas.cafe/weather-app/" target="_blank"
+              <a href="https://weather-app-page.vercel.app/" target="_blank"
                 ><img src="./../.././assets/weather-screenshot.png"
               /></a>
             </div>

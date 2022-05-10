@@ -9,12 +9,17 @@
           <h2>Feel interested?</h2>
           <p>Contact me soon.</p>
           <div class="social-link">
-            <a href="https://github.com/nicopcat" title="github.com/nicopcat">
+            <a
+              target="_blank"
+              href="https://github.com/nicopcat"
+              title="github.com/nicopcat"
+            >
               <svg aria-hidden="true" class="icon">
                 <use xlink:href="#social-icon-github1"></use>
               </svg>
             </a>
             <a
+              target="_blank"
               href="mailto:tianfang07@outlook.com"
               title="tianfang07@outlook.com"
             >
@@ -23,6 +28,7 @@
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.instagram.com/niqks07/"
               title="instagram.com/niqks07/"
             >
@@ -31,6 +37,7 @@
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.facebook.com/nicoletian07/"
               title="facebook.com/nicoletian07/"
             >
@@ -39,6 +46,7 @@
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.douban.com/people/ph1lia/"
               title="(deprecated)"
             >
@@ -47,13 +55,18 @@
               </svg>
             </a>
 
-            <a href="https://weibo.com/u/1751799503" title="笠原喂鴨">
+            <a
+              target="_blank"
+              href="https://weibo.com/u/1751799503"
+              title="笠原喂鴨"
+            >
               <svg aria-hidden="true" class="icon">
                 <use xlink:href="#social-icon-weibo1"></use>
               </svg>
             </a>
 
             <a
+              target="_blank"
               href="https://steamcommunity.com/id/nicoverdes/"
               title="nicoverdes"
             >
@@ -62,6 +75,7 @@
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.last.fm/zh/user/fanntamy"
               title="last.fm/zh/user/fanntamy"
             >
