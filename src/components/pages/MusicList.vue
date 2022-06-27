@@ -33,7 +33,7 @@ export default {
         Visit_Croatia: {
           song_title: "Visit Croatia",
           song_by: "Alabaster dePlume",
-          song_img: "@assets/img/cover/Visit_Croatia.jpg",
+          song_img: "./../.././assets/img/cover/Visit_Croatia.jpg",
           song_url:
             "https://t4.bcbits.com/stream/f0d990afb8ac2997ecb8f59b8f5383cc/mp3-128/2935650481?p=0&ts=1656412268&t=36fd26864999930fba206be9f1159bbbef583487&token=1656412268_5a578a331b73a1aba87b7d9924ffa14348d0b915",
         },
