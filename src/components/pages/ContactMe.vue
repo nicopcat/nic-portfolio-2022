@@ -1,92 +1,92 @@
 <template>
   <base-wrapper>
-    <section class="container">
-      <div class="contact-title">
-        <base-button class="btn" id="contact">CONTACT</base-button>
-      </div>
-      <div class="contact-main">
-        <div class="contact">
-          <h2>Feel interested?</h2>
-          <p>Contact me soon.</p>
-          <div class="social-link">
-            <a
-              target="_blank"
-              href="https://github.com/nicopcat"
-              title="github.com/nicopcat"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-github1"></use>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              href="mailto:tianfang07@outlook.com"
-              title="tianfang07@outlook.com"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-email"></use>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/niqks07/"
-              title="instagram.com/niqks07/"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-instagram-fill"></use>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/nicoletian07/"
-              title="facebook.com/nicoletian07/"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-facebook-fill"></use>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.douban.com/people/ph1lia/"
-              title="(deprecated)"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-snssharedoubanon"></use>
-              </svg>
-            </a>
+    <section>
+      <base-button class="btn" id="contact"> Contact Me </base-button>
+      <div class="container wrap">
+        <div class="contact-main">
+          <div class="contact">
+            <h2>Feel interested?</h2>
+            <p>Contact me soon.</p>
+            <div class="social-link">
+              <a
+                target="_blank"
+                href="https://github.com/nicopcat"
+                title="github.com/nicopcat"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-github1"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="mailto:tianfang07@outlook.com"
+                title="tianfang07@outlook.com"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-email"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/niqks07/"
+                title="instagram.com/niqks07/"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-instagram-fill"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/nicoletian07/"
+                title="facebook.com/nicoletian07/"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-facebook-fill"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.douban.com/people/ph1lia/"
+                title="(deprecated)"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-snssharedoubanon"></use>
+                </svg>
+              </a>
 
-            <a
-              target="_blank"
-              href="https://weibo.com/u/1751799503"
-              title="笠原喂鴨"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-weibo1"></use>
-              </svg>
-            </a>
+              <a
+                target="_blank"
+                href="https://weibo.com/u/1751799503"
+                title="笠原喂鴨"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-weibo1"></use>
+                </svg>
+              </a>
 
-            <a
-              target="_blank"
-              href="https://steamcommunity.com/id/nicoverdes/"
-              title="nicoverdes"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-steam1"></use>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.last.fm/zh/user/fanntamy"
-              title="last.fm/zh/user/fanntamy"
-            >
-              <svg aria-hidden="true" class="icon">
-                <use xlink:href="#social-icon-lastfm1"></use>
-              </svg>
-            </a>
+              <a
+                target="_blank"
+                href="https://steamcommunity.com/id/nicoverdes/"
+                title="nicoverdes"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-steam1"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.last.fm/zh/user/fanntamy"
+                title="last.fm/zh/user/fanntamy"
+              >
+                <svg aria-hidden="true" class="icon">
+                  <use xlink:href="#social-icon-lastfm1"></use>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="my-pic">
-          <img src="./../.././assets/mie-01.jpg" alt="" />
+          <div class="my-pic">
+            <img src="./../.././assets/mie-01.jpg" alt="cat" />
+          </div>
         </div>
       </div>
     </section>
@@ -97,41 +97,19 @@
 export default {};
 </script>
 
-<style scoped>
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-  padding-bottom: 1rem;
-}
-
-.container .contact-title {
-  border-bottom: 5px dashed black;
-  margin-left: 10%;
-  width: 45vw;
-  height: 50px;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.container .contact-title .btn {
-  width: 75px;
+<style lang="less" scoped>
+section {
+  padding: 1rem;
+  .btn {
+    width: 4rem;
+  }
 }
 
 .contact-main {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  /* width: 430px; */
-  width: 70%;
-
-  margin-left: 10%;
-  margin-top: 1rem;
-  /* background-color: royalblue; */
-}
-
-.contact-main .contact {
-  width: 55%;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
 
 .contact-main .contact .social-link {
@@ -150,8 +128,8 @@ export default {};
 }
 
 .contact-main .my-pic {
-  margin-top: 0.4rem;
-  width: 35%;
+  // margin-top: 0.4rem;
+  // width: 35%;
   height: 120px;
 }
 .contact-main .my-pic img {
@@ -160,8 +138,9 @@ export default {};
 }
 
 @media screen and (max-width: 450px) {
-  .contact-main {
-    width: 120%;
+  .contact-main .my-pic img {
+    height: 50%;
+    border-radius: 6px;
   }
 }
 </style>

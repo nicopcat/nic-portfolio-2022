@@ -1,9 +1,7 @@
 <template>
   <base-wrapper>
     <section class="container">
-      <div class="about-title">
-        <base-button class="btn">ABOUT</base-button>
-      </div>
+      <base-button class="btn"> About Me </base-button>
       <div class="info-box">
         <div class="pic">
           <img src="./../.././assets/pic-01.jpg" alt="" />
@@ -30,6 +28,13 @@ export default {};
 </script>
 
 <style lang="less" scoped>
+section {
+  padding: 1rem;
+  .btn {
+    width: 4rem;
+  }
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;

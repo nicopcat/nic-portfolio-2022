@@ -10,7 +10,7 @@
         <li>
           <a href="https://blog.nekolas.cafe/" target="_blank">
             <base-button
-              >BLOG
+              >Blog
               <svg aria-hidden="true" class="icon-arrow">
                 <use xlink:href="#social-icon-jiantou_youshang"></use>
               </svg>
@@ -18,10 +18,10 @@
           </a>
         </li>
         <li>
-          <a href="#contact"><base-button>CONTACT</base-button></a>
+          <a href="#contact"><base-button>Contact</base-button></a>
         </li>
         <li>
-          <a href="#works"><base-button>WORKS</base-button></a>
+          <a href="#works"><base-button>Works</base-button></a>
         </li>
         <li>
           <a href="#music"><base-button>Music</base-button></a>
@@ -37,16 +37,16 @@
             <a href="/">ABOUT</a>
           </li> -->
           <li>
-            <a href="#works" @click="tabOpen = false">WORKS</a>
+            <a href="#works" @click="tabOpen = false">Works</a>
           </li>
           <li>
-            <a href="#music" @click="tabOpen = false">MUSIC</a>
+            <a href="#music" @click="tabOpen = false">Music</a>
           </li>
           <li>
-            <a href="#contact" @click="tabOpen = false">CONTACT</a>
+            <a href="#contact" @click="tabOpen = false">Contact</a>
           </li>
           <li>
-            <a href="https://blog.nekolas.cafe/" target="_blank">BLOG</a>
+            <a href="https://blog.nekolas.cafe/" target="_blank">Blog</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 li {
   list-style: none;
   color: bisque;
@@ -83,6 +83,7 @@ li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  z-index: 999;
 }
 .logo {
   width: 40px;
@@ -111,6 +112,9 @@ li {
 .menu .list-menu li {
   float: right;
   padding: 0.5rem;
+  a div:hover {
+    cursor: pointer;
+  }
 }
 
 .menu a {
@@ -129,13 +133,13 @@ li {
 }
 
 .menu .stack-menu li {
-  /* background-color: #fff; */
   padding: 0.1rem 0.2rem;
   border-radius: 4px;
 }
 
-.menu .stack-menu li:active {
-  border-bottom: 1px solid darkred;
+.menu .stack-menu li {
+  cursor: pointer;
+  border-bottom: 2px solid #ffc801;
 }
 
 @media screen and (max-width: 450px) {

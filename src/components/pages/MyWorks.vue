@@ -1,9 +1,7 @@
 <template>
   <base-wrapper>
     <section class="container">
-      <div class="works-title">
-        <base-button class="btn"> My Works </base-button>
-      </div>
+      <base-button class="btn" id="works"> My Works </base-button>
       <div class="works">
         <div class="items">
           <h3>Dodo</h3>

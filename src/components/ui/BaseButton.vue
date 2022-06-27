@@ -15,6 +15,7 @@ div {
 
 div:hover {
   background-color: #fee37b;
+  cursor: initial;
   /* color: white; */
 }
 </style>
