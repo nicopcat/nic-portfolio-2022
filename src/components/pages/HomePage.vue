@@ -29,7 +29,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .container {
   display: flex;
   flex-flow: row wrap;

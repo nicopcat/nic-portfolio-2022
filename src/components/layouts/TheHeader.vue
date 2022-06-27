@@ -20,9 +20,11 @@
         <li>
           <a href="#contact"><base-button>CONTACT</base-button></a>
         </li>
-
         <li>
-          <a href="#work"><base-button>WORKS</base-button></a>
+          <a href="#works"><base-button>WORKS</base-button></a>
+        </li>
+        <li>
+          <a href="#music"><base-button>Music</base-button></a>
         </li>
         <!-- <li>
           <a href="javacript:;"><base-button>ABOUT</base-button></a>
@@ -35,11 +37,13 @@
             <a href="/">ABOUT</a>
           </li> -->
           <li>
-            <a href="#work">WORKS</a>
+            <a href="#works" @click="tabOpen = false">WORKS</a>
           </li>
-
           <li>
-            <a href="#contact">CONTACT</a>
+            <a href="#music" @click="tabOpen = false">MUSIC</a>
+          </li>
+          <li>
+            <a href="#contact" @click="tabOpen = false">CONTACT</a>
           </li>
           <li>
             <a href="https://blog.nekolas.cafe/" target="_blank">BLOG</a>
@@ -71,9 +75,10 @@ li {
   color: bisque;
 }
 .navbar {
-  /* position: fixed; */
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 60px;
+  height: 55px;
   background-color: rgb(255, 250, 213);
   display: flex;
   flex-flow: row nowrap;
@@ -83,7 +88,7 @@ li {
   width: 40px;
   height: 40px;
   float: left;
-  margin: 14px 25px;
+  margin: 14px 20px;
 }
 
 .logo img {

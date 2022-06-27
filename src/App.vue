@@ -5,7 +5,7 @@
 
 <script>
 import TheHeader from "./components/layouts/TheHeader.vue";
-import TheWrapper from "./components/layouts/TheWrapper.vue";
+import TheWrapper from "./components/layouts/MainPage.vue";
 
 export default {
   components: {

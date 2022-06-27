@@ -2,7 +2,7 @@
   <base-wrapper>
     <section class="container">
       <div class="works-title">
-        <base-button class="btn" id="work">WORKS</base-button>
+        <base-button class="btn"> My Works </base-button>
       </div>
       <div class="works">
         <div class="items">
@@ -60,58 +60,43 @@ export default {};
 </script>
 
 BaseButton
-<style scoped>
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-  margin-bottom: 2rem;
-}
-.container .works-title {
-  border-bottom: 5px dashed black;
-  margin-left: 10%;
-  width: 45vw;
-  height: 50px;
-  margin-top: 2rem;
-  text-align: center;
-}
+<style lang="less" scoped>
+section {
+  padding: 1rem;
 
-.container .works-title .btn {
-  width: 75px;
+  .btn {
+    width: 4rem;
+  }
 }
 
 .container .works {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  margin-left: 8%;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 1rem;
+
+  h3 {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    color: aliceblue;
+    max-width: 120px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 0 rgb(253, 206, 31);
+    font-weight: 400;
+  }
+
+  img {
+    max-width: 100%;
+    box-shadow: 8px 8px 0 rgb(253, 206, 31);
+  }
 }
 
-.container .works h3 {
-  margin: 0.5rem 0;
-  padding: 0.3rem;
-  color: aliceblue;
-  max-width: 120px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 3px 3px 0 rgb(253, 206, 31);
-  font-weight: 400;
-}
-
-.container .works img {
-  margin: auto;
-  max-width: 99%;
-  box-shadow: 8px 8px 0 rgb(253, 206, 31);
-}
-
-.container .works .items,
 .container .works .items {
   flex: 0 1 340px;
   margin: 1rem;
   margin-top: 1.8rem;
 }
 
-.details-show,
 .details-show {
   width: 100%;
   overflow: hidden;
