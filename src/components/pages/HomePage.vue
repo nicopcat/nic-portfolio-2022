@@ -24,7 +24,33 @@
 </template>
 
 <script>
-export default {};
+import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+export default {
+  methods: {
+    loadAnimation() {
+      const tl = gsap.timeline();
+      tl.fromTo(
+        ".pic",
+        { x: 40, opacity: 0 },
+        { x: -20, duration: 2, ease: "bounce.out", opacity: 1 }
+      );
+      tl.to(
+        ".info",
+        {
+          y: 30,
+          duration: 1,
+          ease: "back.in",
+        },
+        "-=2"
+      );
+    },
+  },
+  mounted() {
+    this.loadAnimation();
+  },
+};
 </script>
 
 <style lang="less" scoped>

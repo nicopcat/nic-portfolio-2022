@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="wrapper">
     <transition>
       <home-page></home-page>
     </transition>
@@ -26,8 +26,8 @@ export default {
 };
 </script>
 
-<style scoped>
-section {
+<style lang='less' scoped>
+.wrapper {
   max-width: 720px;
   /* width: 80%; */
   margin: 0 auto;
