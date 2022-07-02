@@ -96,7 +96,7 @@ export default {
           end: "+=500",
           toggleActions: "play pause resume reset",
           scrub: true, // locking animation
-          markers: true,
+          // markers: true,
         },
       });
 

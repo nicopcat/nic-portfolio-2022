@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="my-pic">
-            <img src="./../.././assets/mie-01.jpg" alt="cat" />
+            <img src="@/assets/mie-cute.gif" alt="cat" />
           </div>
         </div>
       </div>
