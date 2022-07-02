@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="logo">
       <a href="/">
-        <img src="./../.././assets/tomato-avatar.png" style="width: 35px" />
+        <img src="@/assets/tomato-avatar.png" style="width: 35px" />
       </a>
     </div>
     <div class="menu">
@@ -21,23 +21,17 @@
           <a href="#contact"><base-button>Contact</base-button></a>
         </li>
         <li>
-          <a href="#works"><base-button>Works</base-button></a>
+          <a href="#projs"><base-button>Projects</base-button></a>
         </li>
         <li>
           <a href="#music"><base-button>Music</base-button></a>
         </li>
-        <!-- <li>
-          <a href="javacript:;"><base-button>ABOUT</base-button></a>
-        </li> -->
       </ul>
       <div class="stack">
         <base-button class="sandwich" @click="openMenu">≡</base-button>
         <ul class="stack-menu" v-if="tabOpen">
-          <!-- <li>
-            <a href="/">ABOUT</a>
-          </li> -->
           <li>
-            <a href="#works" @click="tabOpen = false">Works</a>
+            <a href="#projs" @click="tabOpen = false">Works</a>
           </li>
           <li>
             <a href="#music" @click="tabOpen = false">Music</a>

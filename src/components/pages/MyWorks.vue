@@ -1,6 +1,6 @@
 <template>
   <base-wrapper>
-    <section class="container" id="works">
+    <section class="container" id="projs">
       <base-button class="btn"> Featured Projects </base-button>
       <div class="works">
         <div class="items" v-for="(item, index) in worksList" :key="index">
@@ -8,7 +8,9 @@
           <div class="details">
             <div class="details-show">
               <!-- <div class="shadow"></div> -->
-              <a :href="item.works_url"><img :src="item.works_screenshot" /></a>
+              <a :href="item.works_url" target="_blank"
+                ><img :src="item.works_screenshot"
+              /></a>
             </div>
             <div class="para">
               <h4>Stacks</h4>
@@ -89,11 +91,12 @@ export default {
       // 汉堡动起来
       let tl2 = gsap.timeline({
         scrollTrigger: {
-          trigger: "#works",
-          start: "top",
-          end: "bottom",
+          trigger: "#music",
+          start: "top bottom",
+          end: "+=500",
           toggleActions: "play pause resume reset",
           scrub: true, // locking animation
+          markers: true,
         },
       });
 
@@ -101,27 +104,29 @@ export default {
         ".burger",
         {
           rotate: 0,
-          ease: "out-in",
+          x: -20,
+          scale: 1,
         },
         {
-          rotate: 1240,
-          y: 60,
-          scale: 2,
+          rotate: 380,
+          x: 20,
+          y: 80,
+          scale: 1.4,
           ease: "out-in",
         }
       );
-      // para
+      // parad
       let tl3 = gsap.timeline({
         scrollTrigger: {
-          trigger: "#works",
+          trigger: "#projs",
           start: "top",
           end: "bottom",
         },
       });
       tl3.fromTo(
         ".para",
-        { opacity: 0, duration: 1, x: 0 },
-        { opacity: 1, duration: 1, x: -20 },
+        { opacity: 0, duration: 0.5, x: 0 },
+        { opacity: 1, duration: 0.5, x: -20 },
         "<"
       );
     },
@@ -145,7 +150,7 @@ section {
     position: absolute;
     max-width: 180px;
     width: 100%;
-    bottom: 500px;
+    bottom: 0;
     left: 0;
     transform: translateX(-100%);
   }

@@ -8,9 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
-    "element-ui": "^2.4.5",
     "gsap": "^3.10.4",
     "vue": "^3.2.13",
     "vue-gsap-scrolltrigger": "^2.2.1"

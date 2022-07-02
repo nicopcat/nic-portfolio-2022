@@ -1,4 +1,3 @@
-
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -10,4 +9,5 @@ module.exports = defineConfig({
     maskIcon: 'img/icons/safari-pinned-tab.svg',
     msTileImage: 'img/icons/msapplication-icon-144x144.png'
   },
+
 })
