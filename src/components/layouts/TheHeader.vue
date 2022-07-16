@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="logo">
       <a href="/">
-        <img src="@/assets/tomato-avatar.png" style="width: 35px" />
+        <img src="@/assets/coffee_logo_trans.png" style="width: 42px" />
       </a>
     </div>
     <div class="menu">
@@ -83,7 +83,7 @@ li {
   width: 40px;
   height: 40px;
   float: left;
-  margin: 14px 20px;
+  margin: auto 1rem;
 }
 
 .logo img {
