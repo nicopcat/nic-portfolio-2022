@@ -2,7 +2,10 @@
   <nav class="navbar">
     <div class="logo">
       <a href="/">
-        <img src="@/assets/coffee_logo_trans.png" style="width: 42px" />
+        <img
+          src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-17-00-51-14.PNG"
+          style="width: 42px"
+        />
       </a>
     </div>
     <div class="menu">

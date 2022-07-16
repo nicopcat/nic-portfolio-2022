@@ -204,13 +204,14 @@ section {
     }
     span {
       font-size: 12px;
-      color: rgb(255, 180, 20);
+      font-weight: bold;
+      color: #664707;
       word-break: break-all;
     }
     p {
       padding: 0.3rem 0;
       color: rgb(58, 53, 53);
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
