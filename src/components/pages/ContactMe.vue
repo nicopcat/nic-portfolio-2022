@@ -37,28 +37,20 @@
               </a>
               <a
                 target="_blank"
-                href="https://www.facebook.com/nicoletian07/"
-                title="facebook.com/nicoletian07/"
+                href="https://www.facebook.com"
+                title="Facebook"
               >
                 <svg aria-hidden="true" class="icon">
                   <use xlink:href="#social-icon-facebook-fill"></use>
                 </svg>
               </a>
-              <a
-                target="_blank"
-                href="https://www.douban.com/people/ph1lia/"
-                title="(deprecated)"
-              >
+              <a target="_blank" href="https://www.douban.com" title="Douban">
                 <svg aria-hidden="true" class="icon">
                   <use xlink:href="#social-icon-snssharedoubanon"></use>
                 </svg>
               </a>
 
-              <a
-                target="_blank"
-                href="https://weibo.com/u/1751799503"
-                title="笠原喂鴨"
-              >
+              <a target="_blank" href="https://weibo.com/" title="Weibo">
                 <svg aria-hidden="true" class="icon">
                   <use xlink:href="#social-icon-weibo1"></use>
                 </svg>
