@@ -15,7 +15,7 @@
     <div class="menu">
       <ul class="list-menu">
         <li>
-          <a href="https://blog.nekolas.cafe/" target="_blank">
+          <a href="https://nicopcat.github.io/" target="_blank">
             <base-button
               >Blog
               <svg aria-hidden="true" class="icon-arrow">
