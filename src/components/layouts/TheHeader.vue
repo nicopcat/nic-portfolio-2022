@@ -43,7 +43,7 @@
             <a href="#contact" @click="tabOpen = false">Contact</a>
           </li>
           <li>
-            <a href="https://blog.nekolas.cafe/" target="_blank">Blog</a>
+            <a href="https://nicopcat.github.io/" target="_blank">Blog</a>
           </li>
         </ul>
       </div>
