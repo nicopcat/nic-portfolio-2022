@@ -2,10 +2,14 @@
   <nav class="navbar">
     <div class="logo">
       <a href="/">
-        <img
+        <!-- <img
           src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-17-00-51-14.PNG"
           style="width: 42px"
+        /> -->
+        <img
+          src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-21-20-35-11.png"
         />
+        <span>Nic's Profile</span>
       </a>
     </div>
     <div class="menu">
@@ -81,16 +85,34 @@ li {
   flex-flow: row nowrap;
   justify-content: space-between;
   z-index: 999;
-}
-.logo {
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin: auto 1rem;
-}
 
-.logo img {
-  border-radius: 4px;
+  .logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: auto 1rem;
+    a {
+      display: flex;
+      text-decoration: none;
+
+      img {
+        border-radius: 4px;
+        width: 40px;
+        border-radius: 20px;
+        display: inline-block;
+      }
+      span {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: 600;
+        margin-left: 0.5rem;
+        min-width: 150px;
+        line-height: 40px;
+        font-size: 20px;
+        color: #383838;
+      }
+    }
+  }
 }
 
 .sandwich {
