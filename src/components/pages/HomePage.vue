@@ -7,15 +7,12 @@
           <img src="./../.././assets/pic-01.jpg" alt="" />
         </div>
         <div class="info">
-          <h3>Hi, I'm Nicole</h3>
-          <p>C:\WINDOWS\User\Nicole</p>
+          <h3>Hi, I'm Nic</h3>
+          <p>C:\WINDOWS\User\Nic</p>
 
           <p>I'm a web developer and I like pretty designs.</p>
           <p>
-            Occationally do some photography, enjoy music and reading books<span
-              class="blink"
-              >_</span
-            >
+            Occationally do some photography, enjoy music and reading books<span class="blink">_</span>
           </p>
         </div>
       </div>
@@ -56,6 +53,7 @@ export default {
 <style lang="less" scoped>
 section {
   padding: 1rem;
+
   .btn {
     width: 4rem;
   }
@@ -96,6 +94,7 @@ section {
   width: 100px;
   box-shadow: 3px 3px 0 rgb(125, 148, 219);
 }
+
 .info-box .info {
   max-width: 350px;
   max-height: 260px;
@@ -121,9 +120,11 @@ section {
   font-size: 16px;
   color: rgb(35, 220, 35);
 }
+
 .blink {
   animation: 1s cursor-flicker infinite;
 }
+
 @keyframes cursor-flicker {
   from {
     opacity: 0;

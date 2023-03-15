@@ -23,32 +23,31 @@ export default {
   data() {
     return {
       song_list: {
-        Click: {
-          song_title: "Click",
-          song_by: "C418",
-          song_img:
-            "https://nic-gz-1308403500.file.myqcloud.com/covers/MusicList-2022-06-27-22-59-36.jpg",
-          song_url:
-            // "https://t4.bcbits.com/stream/4600dd73d95eccc661c707fe973a2a5d/mp3-128/1847033482?p=0&ts=1656408973&t=c5ca9509641195dd4f6a53e0e2f38991dea55401&token=1656408973_dd8852fdc67a7c0c042c5362b1bd07853cb501a4",
-            "https://nic-gz-1308403500.file.myqcloud.com/music/MusicList-2022-06-28-00-21-33.mp3",
+        Someday: {
+          song_title: "某天",
+          song_by: "Sam Wilkes & Jacob Mann",
+          song_img: "https://nic-gz-1308403500.file.myqcloud.com/cover/Perform%20the%20Compositions%20of%20Sam%20Wilkes%20%26%20Jacob%20Mann.jpg",
+          song_url: "https://nic-gz-1308403500.file.myqcloud.com/music/Someday.mp3",
         },
-        Visit_Croatia: {
-          song_title: "Visit Croatia",
-          song_by: "Alabaster dePlume",
-          song_img:
-            "https://nic-gz-1308403500.file.myqcloud.com/covers/MusicList-2022-06-27-22-59-47.jpg",
-          song_url:
-            // "https://t4.bcbits.com/stream/f0d990afb8ac2997ecb8f59b8f5383cc/mp3-128/2935650481?p=0&ts=1656412268&t=36fd26864999930fba206be9f1159bbbef583487&token=1656412268_5a578a331b73a1aba87b7d9924ffa14348d0b915",
-            "https://nic-gz-1308403500.file.myqcloud.com/music/MusicList-2022-06-28-00-24-30.mp3",
+        Siri: {
+          song_title: "Siri, 我怎么知道我有承诺恐惧症?",
+          song_by: "Sam Wilkes & Jacob Mann",
+          song_img: "https://nic-gz-1308403500.file.myqcloud.com/cover/Perform%20the%20Compositions%20of%20Sam%20Wilkes%20%26%20Jacob%20Mann.jpg",
+          song_url: "https://nic-gz-1308403500.file.myqcloud.com/music/Siri%2C%20How%20Do%20I%20Know%20If%20I%20Have%20Commitment%20Issues.mp3",
         },
-        Sloth_Dream: {
-          song_title: "Sloth Dream",
-          song_by: "Jacob Mann",
-          song_img:
-            "https://nic-gz-1308403500.file.myqcloud.com/cover/MusicList-2022-06-28-00-35-26.png",
+        BOA: {
+          song_title: "美国银行",
+          song_by: "Sam Wilkes",
+          song_img: "https://nic-gz-1308403500.file.myqcloud.com/cover/Music%20for%20Saxofone%20and%20Bass%20Guitar.jpg",
           song_url:
-            // "https://t4.bcbits.com/stream/f0d990afb8ac2997ecb8f59b8f5383cc/mp3-128/2935650481?p=0&ts=1656412268&t=36fd26864999930fba206be9f1159bbbef583487&token=1656412268_5a578a331b73a1aba87b7d9924ffa14348d0b915",
-            "https://nic-gz-1308403500.file.myqcloud.com/music/MusicList-2022-06-28-00-29-38.mp3",
+            "https://nic-gz-1308403500.file.myqcloud.com/music/BOA.mp3",
+        },
+        I_Sing_High: {
+          song_title: "我唱高了",
+          song_by: "Sam Wilkes",
+          song_img: "https://nic-gz-1308403500.file.myqcloud.com/cover/Music%20for%20Saxofone%20and%20Bass%20Guitar%20More%20Songs.jpg",
+          song_url:
+            "https://nic-gz-1308403500.file.myqcloud.com/music/I%20Sing%20High.mp3",
         },
       },
     };
@@ -58,10 +57,12 @@ export default {
 <style lang="less" scoped>
 section {
   padding: 1rem;
+
   .btn {
     width: 4rem;
   }
 }
+
 .audio_wrap {
   margin: 1rem auto;
   display: flex;
@@ -97,6 +98,7 @@ section {
       // width: 100%;
       height: 32px;
     }
+
     p {
       color: rgb(70, 70, 70);
       font-size: 14px;
@@ -110,6 +112,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .audio_play {
       width: 100%;
       height: 80px;
@@ -119,6 +122,7 @@ section {
         width: 85%;
         height: 30px;
       }
+
       p {
         line-height: 15px;
         font-size: 14px;

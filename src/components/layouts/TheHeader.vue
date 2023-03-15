@@ -2,22 +2,15 @@
   <nav class="navbar">
     <div class="logo">
       <a href="/">
-        <!-- <img
-          src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-17-00-51-14.PNG"
-          style="width: 42px"
-        /> -->
-        <img
-          src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-21-20-35-11.png"
-        />
-        <span>Nic's Profile</span>
+        <img src="https://nic-gz-1308403500.file.myqcloud.com/other/TheHeader-2022-07-21-20-35-11.png" />
+        <span>Nekolas</span>
       </a>
     </div>
     <div class="menu">
       <ul class="list-menu">
         <li>
           <a href="https://nicopcat.github.io/" target="_blank">
-            <base-button
-              >Blog
+            <base-button>Blog
               <svg aria-hidden="true" class="icon-arrow">
                 <use xlink:href="#social-icon-jiantou_youshang"></use>
               </svg>
@@ -35,7 +28,7 @@
         </li>
       </ul>
       <div class="stack">
-        <base-button class="sandwich" @click="openMenu">≡</base-button>
+        <base-button :class="{ sandwich_open: tabOpen, sandwich: !tabOpen }" @click="tabOpen = !tabOpen">≡</base-button>
         <ul class="stack-menu" v-if="tabOpen">
           <li>
             <a href="#projs" @click="tabOpen = false">Works</a>
@@ -75,24 +68,28 @@ li {
   list-style: none;
   color: bisque;
 }
+
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 55px;
-  background-color: rgb(255, 250, 213);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 250, 213);
   z-index: 999;
 
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     float: left;
     margin: auto 1rem;
+
     a {
       display: flex;
+      align-items: flex-end;
       text-decoration: none;
 
       img {
@@ -101,14 +98,15 @@ li {
         border-radius: 20px;
         display: inline-block;
       }
+
       span {
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        font-family: "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
         font-weight: 600;
         margin-left: 0.5rem;
         min-width: 150px;
-        line-height: 40px;
-        font-size: 20px;
+        // line-height: 40px;
+        font-size: 18px;
         color: #383838;
       }
     }
@@ -117,20 +115,15 @@ li {
 
 .sandwich {
   display: none;
-  width: 30px;
-  padding: 5px 5px;
-  text-align: center;
-  color: #fdce1f;
+  color: #fdce1f !important;
+  background-color: white !important;
 }
 
-.sandwich:hover {
-  color: white;
-  cursor: pointer;
-}
 
 .menu .list-menu li {
   float: right;
   padding: 0.5rem;
+
   a div:hover {
     cursor: pointer;
   }
@@ -141,8 +134,9 @@ li {
   font-weight: 600;
   text-decoration: none;
 }
+
 .menu .stack {
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .menu .stack-menu ul {
@@ -153,24 +147,41 @@ li {
 
 .menu .stack-menu li {
   padding: 0.1rem 0.2rem;
-  border-radius: 4px;
 }
 
 .menu .stack-menu li {
   cursor: pointer;
-  border-bottom: 2px solid #ffc801;
+  border-bottom: 2px solid #fff0bc;
 }
 
 @media screen and (max-width: 450px) {
   .menu .list-menu {
     display: none;
   }
+
   .sandwich {
     float: right;
     margin: 4px 0;
+    padding: 5px;
     width: 20px;
     display: block;
+    color: #fdce1f !important;
+    background-color: white !important;
+    text-align: center;
   }
+
+  .sandwich_open {
+    float: right;
+    margin: 4px 0;
+    padding: 5px;
+    width: 20px;
+    display: block;
+    color: white !important;
+    background-color: #fdce1f !important;
+
+    text-align: center;
+  }
+
 }
 
 .icon-arrow {

@@ -8,9 +8,7 @@
           <div class="details">
             <div class="details-show">
               <!-- <div class="shadow"></div> -->
-              <a :href="item.works_url" target="_blank"
-                ><img :src="item.works_screenshot"
-              /></a>
+              <a :href="item.works_url" target="_blank"><img :src="item.works_screenshot" /></a>
             </div>
             <div class="para">
               <h4>Stacks</h4>
@@ -51,13 +49,13 @@ export default {
           stacks: "Vue 3, Vue(vuex), localStorage",
           intro: "一开始为 jQuery 版本，后采用 Vue 重构",
         },
-        find_a_coach: {
-          works_title: "Find Coaches",
-          works_url: "https://find-a-coach-or-become-one.netlify.app/",
-          works_screenshot: require("@/assets/img/works/coach-screenshot.png"),
-          stacks: "Vue 全家桶",
-          intro: "",
-        },
+        // find_a_coach: {
+        //   works_title: "Find Coaches",
+        //   works_url: "https://find-a-coach-or-become-one.netlify.app/",
+        //   works_screenshot: require("@/assets/img/works/coach-screenshot.png"),
+        //   stacks: "Vue 全家桶",
+        //   intro: "",
+        // },
         simple_weather: {
           works_title: "Simple Weather",
           works_url: "https://weather-app-page.vercel.app/",
@@ -154,6 +152,7 @@ section {
     left: 0;
     transform: translateX(-100%);
   }
+
   img {
     width: 100%;
   }
@@ -199,15 +198,18 @@ section {
     padding: 0.5rem;
     border: 4px solid rgb(243, 175, 27);
     margin-top: 5px;
+
     h4 {
       text-decoration: underline;
     }
+
     span {
       font-size: 12px;
       font-weight: bold;
       color: #664707;
       word-break: break-all;
     }
+
     p {
       padding: 0.3rem 0;
       color: rgb(58, 53, 53);
