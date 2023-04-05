@@ -6,7 +6,7 @@
 
 <style scoped>
 div {
-  padding: 0.5em;
+  padding: 0.2em .4em;
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 3px 3px 0 #271300;

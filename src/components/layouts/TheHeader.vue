@@ -28,21 +28,22 @@
         </li>
       </ul>
       <div class="stack">
-        <base-button :class="{ sandwich_open: tabOpen, sandwich: !tabOpen }" @click="tabOpen = !tabOpen">≡</base-button>
-        <ul class="stack-menu" v-if="tabOpen">
-          <li>
+        <base-button :class="{ sandwich_open: tabOpen, sandwich_close: !tabOpen, sandwich: true }"
+          @click="tabOpen = !tabOpen">≡</base-button>
+        <div class="stack-menu" v-show="tabOpen">
+          <div class="items">
             <a href="#projs" @click="tabOpen = false">Works</a>
-          </li>
-          <li>
+          </div>
+          <div class="items">
             <a href="#music" @click="tabOpen = false">Music</a>
-          </li>
-          <li>
+          </div>
+          <div class="items">
             <a href="#contact" @click="tabOpen = false">Contact</a>
-          </li>
-          <li>
+          </div>
+          <div class="items">
             <a href="https://nicopcat.github.io/" target="_blank">Blog</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -73,7 +74,7 @@ li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   position: fixed;
   top: 0;
   width: 100%;
@@ -82,8 +83,8 @@ li {
   z-index: 999;
 
   .logo {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25x;
     float: left;
     margin: auto 1rem;
 
@@ -94,7 +95,7 @@ li {
 
       img {
         border-radius: 4px;
-        width: 40px;
+        width: 35px;
         border-radius: 20px;
         display: inline-block;
       }
@@ -105,90 +106,94 @@ li {
         font-weight: 600;
         margin-left: 0.5rem;
         min-width: 150px;
-        // line-height: 40px;
         font-size: 18px;
         color: #383838;
       }
     }
   }
-}
-
-.sandwich {
-  display: none;
-  color: #fdce1f !important;
-  background-color: white !important;
-}
 
 
-.menu .list-menu li {
-  float: right;
-  padding: 0.5rem;
 
-  a div:hover {
-    cursor: pointer;
+  .menu {
+    .list-menu li {
+      float: right;
+      padding: 0.5rem;
+
+      .icon-arrow {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+
+      a div:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .stack {
+      display: none;
+    }
   }
 }
 
-.menu a {
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-}
 
-.menu .stack {
-  margin: 0 1rem;
-}
 
-.menu .stack-menu ul {
-  margin-right: 1rem;
-  width: 40px;
-  height: auto;
-}
-
-.menu .stack-menu li {
-  padding: 0.1rem 0.2rem;
-}
-
-.menu .stack-menu li {
-  cursor: pointer;
-  border-bottom: 2px solid #fff0bc;
-}
 
 @media screen and (max-width: 450px) {
-  .menu .list-menu {
-    display: none;
+  .menu {
+
+    .list-menu {
+      display: none;
+    }
+
+    .stack {
+      display: flex !important;
+      flex-flow: column nowrap;
+      justify-content: end;
+      align-items: end;
+      margin: .3rem 1rem;
+
+      .sandwich {
+        margin: 4px 0;
+        padding: 5px;
+        width: 20px;
+        color: #fdce1f !important;
+        background-color: white !important;
+        text-align: center;
+      }
+
+      .sandwich_open {
+        color: white !important;
+        background-color: #fdce1f !important;
+      }
+
+      .sandwich_close {
+        color: #fdce1f !important;
+        background-color: white !important;
+      }
+
+      .stack-menu {
+        margin-right: 1rem;
+
+        .items {
+          width: 40px;
+          height: auto;
+          cursor: pointer;
+          border-bottom: 2px solid #fff0bc;
+          padding: 0.1rem 0.2rem;
+        }
+      }
+
+    }
   }
 
-  .sandwich {
-    float: right;
-    margin: 4px 0;
-    padding: 5px;
-    width: 20px;
-    display: block;
-    color: #fdce1f !important;
-    background-color: white !important;
-    text-align: center;
-  }
-
-  .sandwich_open {
-    float: right;
-    margin: 4px 0;
-    padding: 5px;
-    width: 20px;
-    display: block;
-    color: white !important;
-    background-color: #fdce1f !important;
-
-    text-align: center;
-  }
-
-}
-
-.icon-arrow {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
 }
 </style>
